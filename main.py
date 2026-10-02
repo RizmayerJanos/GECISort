@@ -1,5 +1,3 @@
-input = [3, 2, 1, 5, 4, 87, 1]
-
 def occurrence_table(arr):
     occurrences = {}
     for element in arr:
@@ -32,5 +30,9 @@ def worst_sort_recursive(arr, j):
                 yield [elem] + partial
 
 
-print(worst_sort(input))
+print("Input the desired list of numbers: ")
+input_arr = [int(i) for i in input().split()]
+
+
+print(worst_sort(input_arr))
 
